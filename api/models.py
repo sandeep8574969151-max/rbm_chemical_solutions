@@ -53,4 +53,12 @@ class Gallery(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Gallery Image {self.id}"    
+        return f"Gallery Image {self.id}"
+    
+    
+class ClientSlider(models.Model):
+    name = models.CharField(max_length=200)
+    image = models.ImageField(upload_to='clients/')
+
+    def __str__(self):
+        return self.name        

@@ -1,5 +1,10 @@
 from django.contrib import admin
 from .models import Banner, GeneralProduct, Enquiry, Category, Product
+from .models import ClientSlider
+
+
+
+admin.site.register(ClientSlider)
 
 # Banner ko simple register kiya
 @admin.register(Banner)
